@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
 import PropTypes from 'prop-types';
+import Column from '../Column/Column.js';
 
 class List extends React.Component {
 
@@ -9,10 +10,11 @@ class List extends React.Component {
     title: PropTypes.node.isRequired,
     children: PropTypes.node,
     image: PropTypes.string,
+    columnTitle: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
-    children: <p>I can do all the things!</p>,
+    children: <p>I can do all the things!!</p>,
   }
 
   render() {
@@ -21,6 +23,10 @@ class List extends React.Component {
         <Hero titleText={this.props.title} imageLink={this.props.image}/>
         <div className={styles.description}>
           {this.props.children}
+        </div>
+        <div className={styles.columns}>
+          <Column columnTitle = "anim" />
+
         </div>
       </section>
     )
