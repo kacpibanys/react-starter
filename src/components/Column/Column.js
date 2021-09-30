@@ -7,7 +7,7 @@ class Column extends React.Component {
         columnTitle: PropTypes.string.isRequired,
     }
 
-    redner(){
+    render(){
         return(
             <section className={styles.component}>
                 <h3 className={styles.title}>{this.props.columnTitle}</h3>
