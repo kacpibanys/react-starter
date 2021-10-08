@@ -1,7 +1,7 @@
 import shortid from 'shortid';
 
-export const getCardsForColumn = ({cards}, columnId) => cards.filter(card => card.columnId == columnId  && card.columnId == new RegExp(searchString, 'i').test(card.title));
-const {searchString} = this.props;
+export const getCardsForColumn = ({cards}, columnId, searchString) => cards.filter(card => card.columnId == columnId  && card.columnId == new RegExp(searchString, 'i').test(card.title));
+//const {searchString} = this.props;
 const reducerName = 'cards';
 const createActionName = name => `app/${reducerName}/${name}`;
 
