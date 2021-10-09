@@ -4,7 +4,7 @@ import { settings } from '../../data/dataStore';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
 import styles from './Header.scss';
-
+import Search from '../Search/SearchContainer';
 
 class Header extends React.Component {
   render() {
@@ -22,6 +22,7 @@ class Header extends React.Component {
             </nav>
           </div>
         </Container>
+        <Search/>
       </header>
     );
   }
