@@ -10,7 +10,7 @@ const mapStateToProps = (state, props) => {
   const listParams = filteredLists[0] || {};
   return {
     ...listParams,
-    columns: getColumnsForList(state, props.id),
+    columns: getColumnsForList(state, id),
   };
 };
 
